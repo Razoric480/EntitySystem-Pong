@@ -13,6 +13,7 @@ ComponentTypes Border::type() {
 }
 
 void Border::Deserialize( const pugi::xml_node &node ) {
+  //we extract the necessary information out of the xml node and then store it in the object
   int facing = node.attribute("facing").as_int();
   bool horizontal = node.attribute("horizontal").as_bool();
 

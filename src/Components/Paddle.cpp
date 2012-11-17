@@ -21,6 +21,7 @@ ComponentTypes Paddle::type() {
 }
 
 void Paddle::Deserialize( const pugi::xml_node &node ) {
+  //we grab the XML attributes out of the xml node and store them appropriately
   bool player_controlled = node.attribute("player_controlled").as_bool();
   player_controlled_ = player_controlled;
 

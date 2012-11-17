@@ -95,6 +95,7 @@ bool Collision::CheckBorder( Ball* ball, Border* border ) {
       }
     }
   }
+  //scoring side
   else {
     IEntityManager *manager = ServiceLocator::GetEntityManager();
 

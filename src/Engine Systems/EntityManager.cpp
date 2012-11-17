@@ -107,6 +107,9 @@ void EntityManager::AddComponent( const unsigned int &entity, IComponent *compon
 }
 
 unsigned int EntityManager::CreateEntity() {
+  //lock guard
+  std::lock_guard<std::mutex> _(CreateEntityMutex());
+
   int new_id = GenerateNewEntityID();
 
   //if the new id is an error
@@ -120,12 +123,25 @@ unsigned int EntityManager::CreateEntity() {
   return new_id;
 }
 
+std::mutex& EntityManager::CreateEntityMutex() {
+  static std::mutex m;
+  return m;
+}
+
 void EntityManager::KillEntity( const unsigned int &entity ) {
   //remove an entry from the entity set
   all_entities_.erase(entity);
 }
 
+std::mutex& EntityManager::GenerateNewEntityIDMutex() {
+  static std::mutex m;
+  return m;
+}
+
 int EntityManager::GenerateNewEntityID() {
+  //lock guard
+  std::lock_guard<std::mutex> _(GenerateNewEntityIDMutex());
+
   //if the lowest id is less than the max for unsigned integers, return the current one then increment it
   if( lowest_unassigned_entity_id_ < UINT_MAX ) {
     return lowest_unassigned_entity_id_++;

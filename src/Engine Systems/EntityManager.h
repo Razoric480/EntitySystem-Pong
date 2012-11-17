@@ -10,6 +10,7 @@
 #include <map>
 #include "../Types.h"
 #include <set>
+#include <mutex>
 
 using std::vector;
 using std::set;
@@ -50,6 +51,10 @@ private:
 
   //Generates a unique entity non-negative ID.
   int GenerateNewEntityID();
+  
+  //Deadlock preventing mutexes to use lock_guard on.
+  std::mutex& GenerateNewEntityIDMutex();
+  std::mutex& CreateEntityMutex();
 
   unsigned int lowest_unassigned_entity_id_; //lowest current unassigned ID
   set<unsigned int> all_entities_; //list of all the current entity IDs

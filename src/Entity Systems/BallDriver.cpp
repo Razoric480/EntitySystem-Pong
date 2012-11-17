@@ -36,6 +36,7 @@ void BallDriver::Process( const double &dt ) {
   if( !ball_->active_ ) {
     IEntityManager *manager = ServiceLocator::GetEntityManager();
 
+    //if we are inactive and space is pressed, then reset the ball and, if it's the end of the game, reset scores
     if( g_input_map[VK_SPACE] ) {
       ball_->position_.x = 50.0f;
       ball_->position_.y = 50.0f;

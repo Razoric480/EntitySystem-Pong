@@ -116,9 +116,6 @@
     <ClInclude Include="..\src\Engine Systems\IEntityManager.h">
       <Filter>Header Files\Engine Systems</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\Engine Systems\nullEntityManager.h">
-      <Filter>Header Files\Engine Systems</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\Engine Systems\ServiceLocator.h">
       <Filter>Header Files\Engine Systems</Filter>
     </ClInclude>
@@ -130,6 +127,9 @@
     </ClInclude>
     <ClInclude Include="..\src\Entity Systems\AIPaddleDriver.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Engine Systems\nullEntityManager.h">
+      <Filter>Header Files\Engine Systems</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

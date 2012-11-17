@@ -1,3 +1,7 @@
+//© Francois Belair 2012+
+//Author: Francois Belair, http://www.iced-fire.com/
+//Implementation of IEntityManager that does nothing. Note that this could still cause issues due to return values.
+
 #ifndef TPYEINFOTEST_NULLENTITYMANAGER_H_
 #define TPYEINFOTEST_NULLENTITYMANAGER_H_
 

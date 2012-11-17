@@ -13,6 +13,7 @@ IEntityManager* ServiceLocator::GetEntityManager() {
 }
 
 void ServiceLocator::ProvideEntityManager(IEntityManager* manager) {
+  //if we provide a NULL system, we assign a null entity manager instance. otherwise, we set the correct one.
   if( manager == NULL ) {
     entity_manager_ = &null_entity_manager_;
   }

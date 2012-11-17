@@ -1,3 +1,7 @@
+//© Francois Belair 2012+
+//Author: Francois Belair, http://www.iced-fire.com/
+//Interface to the EntityManager to be used with the ServiceLocator. Refer to EntityManager.h
+
 #ifndef ENTITYSYSTEMPONG_IENTITYMANAGER_H_
 #define ENTITYSYSTEMPONG_IENTITYMANAGER_H_
 
