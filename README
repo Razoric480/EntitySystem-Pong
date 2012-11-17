@@ -1,1 +1,11 @@
-EntitySystem Pong
+EntitySystem Pong is a small, windows based Pong game. It makes use of the Entity System heavily taking from the RDBMS beta approach as described on http://entity-systems.wikidot.com/rdbms-with-code-in-systems . The software is presented as is under the MIT license. See the LICENSE file.
+
+The software uses the winmm.dll to make use of timeGetTime, and uses the win32 API to gain access to the advanced console. This functionality is wrapped up into GameClock and ConsoleHandler and so could be ported, however non-trivially.
+
+--
+
+This pong game makes use of 4 entities and 4 systems:
+	Ball component, Border component, Paddle component, Score component
+	Ball driver system, Collision system, Player paddle system and AI paddle system
+
+In generates the entities using an XML file rather than hard coded values, but the legacy code to create it using hard coded is still included, commented out, in the main function.
