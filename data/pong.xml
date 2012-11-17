@@ -1,0 +1,33 @@
+<entities>
+	<entity>
+		<component type="Ball" />
+	</entity>
+	<entity>
+		<component type="Paddle" player_controlled="true" />
+		<component type="Score" />
+	</entity>
+	<entity>
+		<component type="Paddle" player_controlled="false" />
+		<component type="Score" />
+	</entity>
+	<entity>
+		<component type="Border" facing="2" horizontal="true">
+			<position x="50" y="99" />
+		</component>
+	</entity>
+	<entity>
+		<component type="Border" facing="1" horizontal="true">
+			<position x="50" y="1" />
+		</component>
+	</entity>
+	<entity>
+		<component type="Border" facing="2" horizontal="false">
+			<position x="1" y="50" />
+		</component>
+	</entity>
+	<entity>
+		<component type="Border" facing="1" horizontal="false">
+			<position x="99" y="50" />
+		</component>
+	</entity>
+</entities>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Systems">
+      <UniqueIdentifier>{96f11aff-3a66-4ec6-a5b4-c09b331e60e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems">
+      <UniqueIdentifier>{5bde8d4e-975e-41df-a915-6373357eb051}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{e2307110-6c24-429f-920c-150ccc20f3c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components">
+      <UniqueIdentifier>{e08a4710-8fc5-4fdf-ac4c-26307ed1ce19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine Systems">
+      <UniqueIdentifier>{29663660-13fb-4777-931e-7537986f94ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine Systems">
+      <UniqueIdentifier>{57026cdc-b0c2-4be9-bb2a-5aaeb5f9384f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Entity Systems\AIPaddleDriver.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Entity Systems\BallDriver.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Entity Systems\Collision.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Entity Systems\PlayerPaddleDriver.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Components\Ball.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Components\Border.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Components\Paddle.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Components\Score.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Components\ComponentFactory.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Engine Systems\ConsoleHandler.cpp">
+      <Filter>Source Files\Engine Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Engine Systems\EntityManager.cpp">
+      <Filter>Source Files\Engine Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Engine Systems\GameClock.cpp">
+      <Filter>Source Files\Engine Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Engine Systems\ServiceLocator.cpp">
+      <Filter>Source Files\Engine Systems</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Components\Ball.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Components\Border.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Components\Paddle.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Components\Score.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Entity Systems\BallDriver.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Entity Systems\Collision.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Entity Systems\PlayerPaddleDriver.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Components\ComponentFactory.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Engine Systems\ConsoleHandler.h">
+      <Filter>Header Files\Engine Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Engine Systems\EntityManager.h">
+      <Filter>Header Files\Engine Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Engine Systems\GameClock.h">
+      <Filter>Header Files\Engine Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Engine Systems\IEntityManager.h">
+      <Filter>Header Files\Engine Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Engine Systems\nullEntityManager.h">
+      <Filter>Header Files\Engine Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Engine Systems\ServiceLocator.h">
+      <Filter>Header Files\Engine Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Components\IComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Entity Systems\IEntitySystem.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Entity Systems\AIPaddleDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
